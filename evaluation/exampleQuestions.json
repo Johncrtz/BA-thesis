@@ -1,8 +1,9 @@
 {
-  "abstracts": [
+  "Prompt": "based on the following text, create 1 questions of each type: Type 1: Factual-type: The answer to this question should be a number that is directly in the textType 2: Comparison-type:  The answer requires to compare a number from the text to a other number that is also in the text and describes the same topic. Provide the numbers used in the comparison in the Answer.  If theres only one number for a topic in the text, think of a number that that single number in the text could be compared to. For example: Text: The annual profit of 2008 if 200 mllion dollar. Question: Is the annual profit of 2008 bigger or smaller than 300 milion? dollar Answer: It is smaller, with 200 million dollar. type 3: calculation-type: The answer to this question has to be derived from using numbers that concretely appear in the text and perform some kind of numercial operation on them. For each question give the answer with short reasoning. Output Question anwer paris in a JSON format",
+  "reports": [
     {
       "year": "2008",
-      "paragraph": [
+      "paragraphs": [
         {
           "text": "During fiscal 2007, the Company recorded a pretax loss of $918 million on the disposition of its German operations. In addition, the Company recognized a tax benefit of $126 million related to this transaction. The Company recorded an additional loss on this disposition of $153 million during fiscal year 2008. See Note 6, “Acquisitions and Disposals,” for additional information about this transaction. The Company plans to deduct the tax loss realized on the disposition of its German operations as an ordinary worthless stock deduction. Final resolution of the amount and character of the deduction may result in the recognition of additional tax benefits of up to $1.7 billion which may be included in discontinued operations in future periods. The Internal Revenue Service often challenges the characterization of such deductions. If the loss is characterized as a capital loss, any such capital loss could only be realized by being offset against future capital gains and would expire in 2012. Any deferred tax asset, net of its related valuation allowance, resulting from the characterization of the loss as capital may be included with the Company’s non-current assets of discontinued operations",
           "page": "39",
@@ -40,8 +41,8 @@
             },
             {
               "Type": "Calculation-type",
-              "Question": "How many option shares on total were excluded from the diluted net income per share calculation in fiscal 2008, 2007, and 2006 ?",
-              "Answer": "In total 181 million dollarss (Fiscal 2008: 62 million + Fiscal 2007: 62 million + Fiscal 2006: 57 million)"
+              "Question": "How many option shares in total were excluded from the diluted net income per share calculation in fiscal 2008, 2007, and 2006 ?",
+              "Answer": "In total 181 million dollars (Fiscal 2008: 62 million + Fiscal 2007: 62 million + Fiscal 2006: 57 million)"
             }
           ]
         },
@@ -82,7 +83,7 @@
             },
             {
               "Type": "Calculation-type",
-              "Question": "If Wal-Mart's fiscal year ended on January 31, 2008, and it had net sales of $374.5 billion, calculate the average monthly net sales for that fiscal year.",
+              "Question": "If Wal-Mart's fiscal year ended on January 31, 2008, and it had net sales of $374.5 billion, what are the average monthly net sales for that fiscal year.",
               "Answer": "Approximately $31.21 billion per month"
             }
           ]
@@ -112,7 +113,7 @@
     },
     {
       "year": "2006",
-      "paragraph": [
+      "paragraphs": [
         {
           "text": "As of January 31, 2006, our International operations were located in nine countries and Puerto Rico. Internationally, we generated approximately 20.1% of our fi scal 2006 sales. Outside the United States, we operate several different formats of retail stores and restaurants, including supercenters, discount stores and SAM’S CLUBs. Additionally, at January 31, 2006, we owned an unconsolidated 33.3% minority interest in Central American Retail Holding Company (“CARHCO”), a retailer operating in fi ve Central American countries. In February 2006, we acquired a controlling interest in CARHCO",
           "page": "21",
@@ -129,7 +130,7 @@
             },
             {
               "Type": "Calculation-type",
-              "Question": "If the total fiscal 2006 sales were $1 billion, what would be the approximate sales generated internationally?",
+              "Question": "If the total sale from fiscal 2006 were $1 billion, what would be the approximate generated sales from International operations?",
               "Answer": "$201 million"
             }
           ]
@@ -171,7 +172,7 @@
             },
             {
               "Type": "Calculation-type",
-              "Question": "How much did fuel sales contribute to fiscal 2006 and 2005 in comparative club sales in total?",
+              "Question": "How much did fuel sales contribute to fiscal 2006 and 2005 in comparative club sales in total, measured in basis points?",
               "Answer": "Fuel sales in 2005 and 2006 contributed 251 basis points in total "
             }
           ]
@@ -222,7 +223,7 @@
     },
     {
       "year": "2012",
-      "paragraph": [
+      "paragraphs": [
         {
           "text": "Net sales for the Sam’s Club segment increased 8.8% and 3.5% for fi scal 2012 and 2011, respectively, compared to the previous fi scal year. The net sales increase in fi scal 2012 compared to fi scal 2011 was primarily due to positive comparable club sales, driven by customer traffi c, increases in average ticket and higher fuel sales. Higher fuel sales, resulting from higher fuel prices and increased gallons sold, positively impacted comparable sales by 340 basis points during fi scal 2012. The fi scal 2011 growth in net sales is primarily due to the increase in average ticket and member traffi c. In addition, fuel sales, driven by higher fuel prices and gallons sold, positively impacted comparable club sales by 200 basis points in fi scal 2011. Volatility in fuel prices may continue to impact the net sales and operating income of the Sam’s Club segment in the future",
           "page": "25",
@@ -332,7 +333,7 @@
     },
     {
       "year": "2015",
-      "paragraph": [
+      "paragraphs": [
         {
           "text": "We hold currency swaps to hedge the currency exchange component of our net investments and also to hedge the currency exchange rate fluctuation exposure associated with the forecasted payments of principal and interest of non-U.S. denominated debt. The aggregate fair value of these swaps was in a liability position of $110 million at January 31, 2015 and in an asset position of $550 million at January 31, 2014. The change in the fair value of these swaps was due to fluctuations in currency exchange rates, primarily the strengthening of the U.S. dollar relative to other currencies in the latter half of fiscal 2015. A hypothetical 10% increase or decrease in the currency exchange rates underlying these swaps from the market rate at January 31, 2015 would have resulted in a loss or gain in the value of the swaps of $435 million. A hypothetical 10% change in interest rates underlying these swaps from the market rates in effect at January 31, 2015 would have resulted in a loss or gain in value of the swaps of $20 million",
           "page": "31",
@@ -436,6 +437,361 @@
               "Question": "What is the net change in the valuation allowance during fiscal 2015?",
               "Answer": "$0.3 billion ([$1.8 billion - $1.5 billion])"
             }
+          ]
+        }
+      ]
+    },
+     {
+      "year": "2018",
+      "paragraphs": [
+        {
+          "text": "General almart Inc. (formerly Wal-Mart Stores, Inc.) (Walmart or the Company) helps people around the world save money and live better – anytime and anywhere – in retail stores and through eCommerce. Through innovation, the Company is striving to create a customer-centric experience that seamlessly integrates digital and physical shopping into an omni-channel offering that saves time for its customers. Each week, the Company serves nearly 270 million customers who visit its more than 11,700 stores and numerous eCommerce websites under 65 banners in 28 countries. The Company's strategy is to lead on price, invest to differentiate on access, be competitive on assortment and deliver a great experience. The Company's operations comprise three reportable segments: Walmart U.S., Walmart International and Sam's Club.",
+          "page": "60",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "How many banners does the Company operate under?",
+  "Answer": "65"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Is the number of countries where the Company operates greater or less than the number of stores it has?",
+  "Answer": "Greater, with 11,700 stores"
+},
+{
+  "Type": "Calculation-type",
+  "Question": "What is the average number of customers served per store each week?",
+  "Answer": "Approximately 22,965 (calculated by dividing nearly 270 million weekly customers by more than 11,700 stores)"
+}
+          ]
+        },
+        {
+          "text": "Cash and Cash Equivalents The Company considers investments with a maturity when purchased of three months or less to be cash equivalents. All credit card, debit card and electronic transfer transactions that process in less than seven days are classified as cash and cash equivalents. The amounts due from banks for these transactions classified as cash and cash equivalents totaled $1.6 billion and $1.5 billion at January 31, 2018 and 2017, respectively. In addition, cash and cash equivalents included restricted cash of $300 million and $265 million at January 31, 2018 and 2017, respectively, which was primarily related to cash collateral holdings from various counterparties, as required by certain derivative and trust agreements.",
+          "page": "60",
+          "QA": [
+
+  {
+    "Type": "Factual-type",
+    "Question": "What is the total amount of cash and cash equivalents at January 31, 2018?",
+    "Answer": "$1.6 billion"
+  },
+  {
+    "Type": "Comparison-type",
+    "Question": "Is the amount of restricted cash at January 31, 2018, greater or less than the amount of restricted cash at January 31, 2017?",
+    "Answer": "Greater, with $300 million at January 31, 2018, compared to $265 million at January 31, 2017"
+  },
+  {
+    "Type": "Calculation-type",
+    "Question": "What is the difference in the amounts due from banks for cash and cash equivalents at January 31, 2018, and January 31, 2017?",
+    "Answer": "$0.1 billion (calculated by subtracting $1.5 billion at January 31, 2017, from $1.6 billion at January 31, 2018)"
+  }
+
+
+          ]
+        },
+        {
+          "text": "Pre-Opening Costs The cost of start-up activities, including organization costs, related to new store openings, store remodels, relocations, expansions and conversions are expensed as incurred and included in operating, selling, general and administrative expenses in the Company's Consolidated Statements of Income. Pre-opening costs totaled $106 million, $131 million and $271 million for fiscal 2018, 2017 and 2016, respectively.",
+          "page": "64",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "What were the pre-opening costs for fiscal 2017?",
+  "Answer": "$131 million"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Are the pre-opening costs for fiscal 2018 greater or smaller than the pre-opening costs for fiscal 2016?",
+  "Answer": "Smaller, with $106 million for fiscal 2018 compared to $271 million for fiscal 2016"
+},
+{
+  "Type": "Calculation-type",
+  "Question": "What is the difference in pre-opening costs between fiscal 2017 and fiscal 2016?",
+  "Answer": "$140 million (calculated by subtracting $271 million for fiscal 2016 from $131 million for fiscal 2017)"
+}
+
+          ]
+        },
+        {
+          "text": "The committed lines of credit in the table above mature at various times between May 2018 and May 2022, carry interest rates generally ranging between LIBOR plus 10 basis points and LIBOR plus 75 basis points, and incur commitment fees ranging between 1.5 and 4.0 basis points. In conjunction with the committed lines of credit listed in the table above, the Company has agreed to observe certain covenants, the most restrictive of which relates to the maximum amount of secured debt. Additionally, the Company also maintains other committed lines of credit outside of the U.S. with an available and undrawn amount of approximately $4.0 billion as of January 31, 2018",
+          "page": "69",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "What is the maximum commitment fee percentage mentioned in the text?",
+  "Answer": "4.0 basis points"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Is the maximum commitment fee percentage greater or smaller than the maximum interest rate percentage?",
+  "Answer": "Smaller, with 75 basis points for interest rates compared to 4.0 basis points for commitment fees"
+},
+{
+  "Type": "Calculation-type",
+  "Question": "What is the difference in basis points between the minimum and maximum commitment fees?",
+  "Answer": "2.5 basis points (calculated by subtracting 1.5 basis points from 4.0 basis points)"
+}
+          ]
+        },
+        {
+          "text": "The Company only enters into derivative transactions with counterparties rated A- or better by nationally recognized credit rating agencies. Subsequent to entering into derivative transactions, the Company regularly monitors the credit ratings of its counterparties. In connection with various derivative agreements, including master netting arrangements, the Company held cash collateral from counterparties of $279 million and $242 million at January 31, 2018 and January 31, 2017, respectively. The Company records cash collateral received as amounts due to the counterparties exclusive of any derivative asset. Furthermore, as part of the master netting arrangements with each of these counterparties, the Company is also required to post collateral with a counterparty if the Company's net derivative liability position exceeds $150 million with such counterparties. The Company did not have any cash collateral posted with counterparties at January 31, 2018 and January 31, 2017, respectively. The Company records cash collateral it posts with counterparties as amounts receivable from those counterparties exclusive of any derivative liability.",
+          "page": "73",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "What were the amounts of cash collateral held from counterparties at January 31, 2018 and January 31, 2017?",
+  "Answer": "$279 million at January 31, 2018, and $242 million at January 31, 2017"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Is the amount of cash collateral held at January 31, 2018, greater or smaller than that of January 31, 2017?",
+  "Answer": "Greater, with $279 million for 2018 compared to $242 million for 2017"
+},
+{
+  "Type": "Calculation-type",
+  "Question": "What is the total change in cash collateral held from counterparties at January 31, 2018, and January 31, 2017?",
+  "Answer": "$521 million (calculated by subtracting $242 million from $279 million)"
+}
+
+          ]
+        }
+      ]
+    },
+     {
+      "year": "2020",
+      "paragraphs": [
+        {
+          "text": "In September 2018, the United States Environmental Protection Agency (the “EPA”) notified the Company that it had initiated  an administrative penalty action by issuing a Draft Consent Agreement and Final Order. The letter accompanying the Draft  Consent Agreement and Final Order alleges that the Company distributed and/or sold three unregistered pesticide products from  March to June, 2017. The EPA is seeking a penalty of $960,000. The manufacturer of the product is responsible for ensuring  that a FIFRA-regulated product is properly registered prior to its sale. The Company is cooperating with the EPA",
+          "page": "27",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "What is the amount of penalty sought by the EPA in the administrative action?",
+  "Answer": "$960,000"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Is the alleged penalty amount by the EPA greater or smaller than one million dollars?",
+  "Answer": "Smaller, with $960,000"
+},
+{
+  "Type": "Calculation-type",
+  "Question": "If the Company is found semi-liable and required to pay half EPA penalty, what amount of the penalty is the Company responsible for?",
+  "Answer": "$480,000 ($960,000 : 2)"
+}
+
+          ]
+        },
+        {
+          "text": "Issuer Repurchases of Equity Securities From time to time, we repurchase shares of our common stock under share repurchase programs authorized by the Company's  Board of Directors. All repurchases made during fiscal 2020 were made under the current $20.0 billion share repurchase  program approved in October 2017, which has no expiration date or other restrictions limiting the period over which the  Company can make share repurchases. As of January 31, 2020, authorization for $5.7 billion of share repurchases remained.  Any repurchased shares are constructively retired and returned to an unissued status",
+          "page": "28",
+          "QA": [
+
+{
+  "Type": "Factual-type",
+  "Question": "As of January 31, 2020, how much authorization for share repurchases remained?",
+  "Answer": "$5.7 billion"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Is the share repurchase program authorized amount greater or smaller than $10 billion?",
+  "Answer": "Greater, with $20.0 billion"
+},
+{
+  "Type": "Calculation-type",
+  "Question": "If the Company repurchases $2 billion worth of shares, how much authorization for share repurchases will remain?",
+  "Answer": "$3.7 billion (calculated by subtracting $2 billion from the remaining authorization of $5.7 billion)"
+}
+
+
+
+          ]
+        },
+        {
+          "text": "Walmart U.S. comparable sales increased 2.9% and 3.7% in fiscal 2020 and 2019, respectively, driven by ticket and  transactions growth. Walmart U.S. eCommerce sales positively contributed approximately 1.7% and 1.3% to comparable sales  for fiscal 2020 and 2019, respectively, as we continue to focus on a seamless omni-channel experience for our customers.  Sam's Club comparable sales increased 1.6% and 5.4% in fiscal 2020 and 2019, respectively. Sam's Club comparable sales for  both fiscal 2020 and 2019 benefited from growth in transactions and higher fuel sales, which were partially offset by lower  ticket due to our decision to remove tobacco from certain club locations. Sam's Club fiscal 2019 comparable sales were further  aided by transfers of sales from our closed clubs to our existing clubs. Sam's Club eCommerce sales positively contributed  approximately 1.5% and 0.9% to comparable sales for fiscal 2020 and 2019, respectively. ",
+          "page": "31",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "What was the percentage increase in Walmart U.S. comparable sales in fiscal 2020?",
+  "Answer": "2.9%"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Was the growth rate of Sam's Club comparable sales in fiscal 2020 higher or lower than in fiscal 2019?",
+  "Answer": "Lower, with 1.6% in fiscal 2020 and 5.4% in fiscal 2019"
+},
+{
+  "Type": "Calculation-type",
+  "Question": "What was the total contribution of Walmart U.S. eCommerce sales to comparable sales in fiscal 2020?",
+  "Answer": "Approximately 3.0% (calculated by adding the contribution of 1.7% in fiscal 2020 and 1.3% in fiscal 2019)"
+}
+
+
+
+          ]
+        },
+        {
+          "text": "For fiscal 2019, operating expenses as a percentage of net sales decreased 48 basis points, when compared to the previous fiscal  year. The primary drivers of the expense leverage were strong sales performance in conjunction with productivity  improvements and lapping of certain fiscal 2018 charges. The improvements in fiscal 2019 were partially offset by additional investments in eCommerce and technology, as well as a $160 million charge related to a securities class action lawsuit.",
+          "page": "32",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "By how many basis points did operating expenses as a percentage of net sales decrease in fiscal 2019?",
+  "Answer": "48 basis points"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Did operating expenses as a percentage of net sales increase or decrease in fiscal 2019 compared to the previous fiscal year?",
+  "Answer": "It decreased by 48 basis points"
+},
+{
+  "Type": "Calculation-type",
+  "Question": "WWhat is half the $160 million charge related to a securities class action lawsuit?",
+  "Answer": "$80 million ($160 million divided by 2)"
+}
+
+          ]
+        },
+        {
+          "text": "We hedge a portion of our foreign currency risk by entering into currency swaps. The aggregate fair value of these swaps was in a liability position of $241 million and asset position of $62 million as of January 31, 2020 and January 31, 2019,  respectively. The change in the fair value of these swaps was due to fluctuations in currency exchange rates, primarily the  strengthening of the U.S. dollar relative to other currencies in fiscal 2020. The hypothetical result of a uniform 10% weakening  in the value of the U.S. dollar relative to other currencies underlying these swaps would have resulted in a change in the value  of the swaps of $173 million. A hypothetical 10% change in interest rates underlying these swaps from the market rates in  effect as of January 31, 2020 would have resulted in a change in the value of the swaps of $42 million.",
+          "page": "73",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "What was the aggregate fair value of currency swaps in a liability position as of January 31, 2020?",
+  "Answer": "$241 million"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "How did the fair value of currency swaps change from January 31, 2019, to January 31, 2020?",
+  "Answer": "It changed from an asset position of $62 million to a liability position of $241 million"
+},
+{
+  "Type": "Calculation-type",
+  "Question": "What would be the impact on the value of the swaps if there was a uniform 10% weakening in the value of the U.S. dollar relative to other currencies, based on the provided information?",
+  "Answer": "The value of the swaps would decrease by $17.3 million (calculated as 10% of $173 million)"
+}
+          ]
+        }
+      ]
+    },     {
+      "year": "2009",
+      "paragraphs": [
+        {
+          "text": "In addition to currency swaps, we have designated debt of approximately £3.0 billion as of January 31, 2009 and 2008, as a hedge of our net investment in the United Kingdom. At January 31, 2009, a hypothetical 10% increase or decrease in value of the U.S. dollar relative to the British pound would have resulted in a gain or loss in the value of the debt of $440 million. At January 31, 2008, a hypothetical 10% increase or decrease in value of the U.S. dollar relative to the British pound would have resulted in a gain or loss in the value of the debt of $601 million. In addition, we have designated debt of approximately ¥437.4 and ¥142.1 billion as of January 31, 2009 and 2008, respectively, ",
+          "page": "26",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "What is the designated debt amount for the United Kingdom as of January 31, 2009?",
+  "Answer": "£3.0 billion"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Was the hypothetical 10% increase or decrease in value of the U.S. dollar relative to the British pound in January 31 2009 lead to a higher or lower gain/loss than in January 31 2008",
+  "Answer": "A gain of 20% instead of 10% of double the value to $880 million"
+},
+{
+  "Type": "Calculation-type",
+   "Question": "At January 31, 2009, if the U.S. dollar's value increases by 20% instead 10% relative to the British pound, how high would the gain or loss in the value of the debt be?",
+  "Answer": "A gain of 20% instead of 10% of double the value to $880 million"
+}
+
+
+          ]
+        },
+        {
+          "text": "Cash and Cash Equivalents The Company considers investments with a maturity of three months  or less when purchased to be cash equivalents. The majority of payments due from banks for third-party credit card, debit card and electronic benefi t transactions (“EBT”) process within 24-48 hours, except for transactions occurring on a Friday, which are generally processed the following Monday. All credit card, debit card and EBT transactions that process in less than seven days are classifi ed as  cash and cash equivalents. Amounts due from banks for these transactions classifi ed as cash totaled $2.0 billion and $826 million at January 31, 2009 and 2008, respectively. In addition, cash and cash equivalents includes restricted cash related to cash collateral holdings from various counterparties as required by certain derivative and trust agreements of $577 million at January 31, 2009",
+          "page": "34",
+          "QA": [
+
+{
+  "Type": "Factual-type",
+  "Question": "What is the total amount of cash and cash equivalents, including restricted cash, at January 31, 2009?",
+  "Answer": "$2.577 billion"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Is the amount due from banks for third-party transactions classified as cash in 2009 bigger or smaller than in 2008?",
+  "Answer": "It is bigger, with $2.0 billion in 2009 compared to $826 million in 2008."
+},
+{
+  "Type": "Calculation-type",
+  "Question": "What is the difference in the amount of cash and cash equivalents between 2009 and 2008?",
+  "Answer": "$1.751 billion (calculated by subtracting $826 million from $2.577 billion)"
+}
+
+
+
+
+          ]
+        },
+        {
+          "text": "Depreciation and Amortization Depreciation and amortization for fi nancial statement purposes are provided on the straight-line method over the estimated useful lives of the various assets. Depreciation expense, including amortization of property under capital leases, for fi scal years 2009, 2008 and 2007  was $6.7 billion, $6.3 billion and $5.5 billion, respectively. For income  tax purposes, accelerated methods of depreciation are used with recognition of deferred income taxes for the resulting temporary diff erences. Leasehold improvements are depreciated over the shorter of the estimated useful life of the asset or the remaining expected lease term. Estimated useful lives for fi nancial statement purposes are as follows:",
+          "page": "36",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "What was the depreciation expense, including amortization of property under capital leases, for fiscal year 2009?",
+  "Answer": "$6.7 billion"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Is the depreciation expense in fiscal year 2009 bigger or smaller than in fiscal year 2008?",
+  "Answer": "It is bigger, with $6.7 billion in 2009 compared to $6.3 billion in 2008."
+},
+{
+  "Type": "Calculation-type",
+  "Question": "What is the total depreciation expense for fiscal years 2008 and 2009?",
+  "Answer": "$13 billion (calculated by adding $6.3 billion from 2008 to $6.7 billion from 2009)"
+}
+
+
+
+
+          ]
+        },
+        {
+          "text": "For fiscal 2019, operating expenses as a percentage of net sales decreased 48 basis points, when compared to the previous fiscal  year. The primary drivers of the expense leverage were strong sales performance in conjunction with productivity  improvements and lapping of certain fiscal 2018 charges. The improvements in fiscal 2019 were partially offset by additional investments in eCommerce and technology, as well as a $160 million charge related to a securities class action lawsuit.",
+          "page": "32",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "By how many basis points did operating expenses as a percentage of net sales decrease in fiscal 2019?",
+  "Answer": "48 basis points"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "Did operating expenses as a percentage of net sales increase or decrease in fiscal 2019 compared to the previous fiscal year?",
+  "Answer": "It decreased by 48 basis points"
+},
+{
+  "Type": "Calculation-type",
+  "Question": "WWhat is half the $160 million charge related to a securities class action lawsuit?",
+  "Answer": "$80 million ($160 million divided by 2)"
+}
+
+          ]
+        },
+        {
+          "text": "Net Income Per Common Share Basic net income per common share is based on the weighted-average number of outstanding common shares. Diluted net income per common share is based on the weighted-average number of outstanding shares adjusted for the dilutive eff ect of stock options and other share-based awards. The dilutive eff ect of stock options and other share-based awards was 12 million, 6 million and 4 million shares in fi scal 2009, 2008 and 2007, respectively. The Company had approximately 6 million, 62 million and 62 million option shares outstanding at January 31, 2009, 2008 and 2007, respectively, which were not included in the diluted net income per share calculation because their eff ect would be antidilutive",
+          "page": "36",
+          "QA": [
+{
+  "Type": "Factual-type",
+  "Question": "What was the aggregate fair value of currency swaps in a liability position as of January 31, 2020?",
+  "Answer": "$241 million"
+},
+{
+  "Type": "Comparison-type",
+  "Question": "How did the fair value of currency swaps change from January 31, 2019, to January 31, 2020?",
+  "Answer": "It changed from an asset position of $62 million to a liability position of $241 million"
+},
+{
+  "Type": "Calculation-type",
+  "Question": "What would be the impact on the value of the swaps if there was a uniform 10% weakening in the value of the U.S. dollar relative to other currencies, based on the provided information?",
+  "Answer": "The value of the swaps would decrease by $17.3 million (calculated as 10% of $173 million)"
+}
           ]
         }
       ]

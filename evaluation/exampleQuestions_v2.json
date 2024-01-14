@@ -1,0 +1,32 @@
+{
+  "Prompt": "Based on the following text, create 1 questions of each type along with the correct answer:  Type 1: Factual-type: Ask something such that the answer is a number that is mentioned in the text Type 2: Comparison-type: Ask a comparasive question about a number that is mentioned in the text. Either compare the number to another number in the text as in example-question-1 or to any other appropriate number as in example-question-2. Example: Text: The annual profit of 2008 if 200 mllion dollar and  of 2007 300 million dollar. Example-questions: Is ... bigger/smaller than ... What is the biggest/smallest... / What ... is equal to ... Type 3: calculation-type: Ask a question whose answer requires to make calculations with  numbers that are mentioned in the text. The answer should involve the calculation that led to the result. Example: Text: 20% of our 2 million dollars in total sales from fiscal year 2006 were generated from international operations. Example-question-1: How much money was  generated from international operations? Example-answer-1: 400000 Dollars (2 million Dollars * 20% = 400000 Dollars) Output Question anwer paris in a JSON format",
+  "abstracts": [
+    {
+      "year": "2008",
+      "paragraph": [
+        {
+          "text": "During fiscal 2007, the Company recorded a pretax loss of $918 million on the disposition of its German operations. In addition, the Company recognized a tax benefit of $126 million related to this transaction. The Company recorded an additional loss on this disposition of $153 million during fiscal year 2008. See Note 6, “Acquisitions and Disposals,” for additional information about this transaction. The Company plans to deduct the tax loss realized on the disposition of its German operations as an ordinary worthless stock deduction. Final resolution of the amount and character of the deduction may result in the recognition of additional tax benefits of up to $1.7 billion which may be included in discontinued operations in future periods. The Internal Revenue Service often challenges the characterization of such deductions. If the loss is characterized as a capital loss, any such capital loss could only be realized by being offset against future capital gains and would expire in 2012. Any deferred tax asset, net of its related valuation allowance, resulting from the characterization of the loss as capital may be included with the Company’s non-current assets of discontinued operations",
+          "page": "39",
+          "QA": [
+    {
+      "type": "Factual-type",
+      "question": "How many option shares were outstanding at January 31, 2006?",
+      "answer": "57 million"
+    },
+    {
+      "type": "Comparison-type",
+      "question": "In fiscal 2008, was the dilutive effect of stock options and other share-based awards greater or smaller than in fiscal 2007?",
+      "answer": "Greater"
+    },
+    {
+      "type": "Calculation-type",
+      "question": "What is the total dilutive effect of stock options and other share-based awards in fiscal 2007, based on the provided information?",
+      "answer": "4 million"
+    }
+  ]
+        }
+        
+      ]
+    }
+  ]
+}
