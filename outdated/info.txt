@@ -1,0 +1,1 @@
+This folder has a pipeline version with Pinecone / FaunaDB based IR
